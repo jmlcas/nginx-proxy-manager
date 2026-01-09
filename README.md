@@ -1,4 +1,4 @@
-# nginx-proxy-manager
+# Nginx-Proxy-Manager
 
 Ver en "http://localhost:81"
 
