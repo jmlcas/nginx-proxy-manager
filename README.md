@@ -1,6 +1,6 @@
 # nginx-proxy-manager
 
-Ver en "localhost:81"
+Ver en "http://localhost:81"
 
 Email: admin@example.com
 
