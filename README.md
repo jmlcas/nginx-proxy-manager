@@ -2,10 +2,6 @@
 
 Ver en "http://localhost:81"
 
-Email: admin@example.com
-
-Password: changeme
-
 ------------------
 
 Ver vídeo:
