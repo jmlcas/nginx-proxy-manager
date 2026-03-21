@@ -1,14 +1,15 @@
 services:
 
-  app:
+  npm:
     image: jc21/nginx-proxy-manager:latest
     container_name: npm
     restart: unless-stopped
     ports:
-      - '80:80' 
-      - '443:443' 
-      - '81:81' 
+      - '80:80'
+      - '443:443'
+      - '81:81'
     environment:
+      TZ: "Europe/Madrid"
       DB_MYSQL_HOST: "db"
       DB_MYSQL_PORT: 3306
       DB_MYSQL_USER: "npm"
@@ -32,6 +33,3 @@ services:
       MARIADB_AUTO_UPGRADE: '1'
     volumes:
       - ./mysql:/var/lib/mysql
-
-      
-      
