@@ -22,7 +22,7 @@ services:
       - db
 
   db:
-    image: jc21/mariadb-aria:latest
+    image: mariadb:latest
     container_name: npm-db
     restart: unless-stopped
     environment:
@@ -30,6 +30,6 @@ services:
       MYSQL_DATABASE: 'npm'
       MYSQL_USER: 'npm'
       MYSQL_PASSWORD: 'npmpass'
-      MARIADB_AUTO_UPGRADE: '1'
+      TZ: "Europe/Madrid"
     volumes:
       - ./mysql:/var/lib/mysql
